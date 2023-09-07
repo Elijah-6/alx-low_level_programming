@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * A program to master puts
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
