@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_rev - check the code
+ * rev_string - reverse string
  *
  * @s: pointer to reverse its value
  *
  * Return: Always 0.
  */
 
-void print_rev(char *s)
+
+void rev_string(char *s)
 {
 	int length = 0;
 	int start = 0;
