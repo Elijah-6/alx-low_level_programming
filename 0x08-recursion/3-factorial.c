@@ -1,10 +1,9 @@
-
 /**
- * factorial - returns the factorial of a given number
+ * factorial - returns the factorial of a given number.
  *
- * @n: number to find factorial of
+ * @n: number to find factorial of.
  *
- * Return: factorial 
+ * Return: factorial
  */
 
 int factorial(int n)
@@ -18,5 +17,5 @@ int factorial(int n)
 		return (1);
 	}
 	else
-		return (n * factorial(n -1));
+		return (n * factorial(n - 1));
 }
