@@ -1,8 +1,11 @@
 #include "main.h"
 /**
- * _sqrt_recursion - find the sqrt of n
+ * _sqrt_helper - helper function to find root.
+ * _sqrt_recursion - find the sqrt of n.
  *
- * _sqrt_helper - helper function to find root
+ * @n: number to find root of.
+ *
+ * @guess: first guess for operation.
  *
  * Return: sqrt of n
  */
@@ -11,12 +14,12 @@ int _sqrt_helper(int n, int guess)
 	int square;
 
 	square = guess * guess;
-	if ( n == square)
+	if (n == square)
 		return (guess);
 	else if (square > n || guess > n / guess)
 		return (-1);
 	else
-		return _sqrt_helper(n, guess + 1);
+		return (_sqrt_helper(n, guess + 1));
 }
 
 int _sqrt_recursion(int n)
