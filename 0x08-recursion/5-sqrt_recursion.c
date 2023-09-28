@@ -26,7 +26,7 @@ int _sqrt_helper(int n, int guess)
  * _sqrt_recursion - find the square root of a number
  *
  * @n: number to find its square root
- * 
+ *
  * Return: square root of n
  */
 int _sqrt_recursion(int n)
