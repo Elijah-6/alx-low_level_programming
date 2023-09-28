@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _sqrt_helper - helper function to find root.
+ *
  * _sqrt_recursion - find the sqrt of n.
  *
  * @n: number to find root of.
@@ -21,6 +22,12 @@ int _sqrt_helper(int n, int guess)
 	else
 		return (_sqrt_helper(n, guess + 1));
 }
+/**
+ * _sqrt_recursion - find the square root of a number
+ *
+ * @n: number to find its square root
+ *
+ */
 
 int _sqrt_recursion(int n)
 {
