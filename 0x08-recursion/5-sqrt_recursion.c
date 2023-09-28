@@ -29,7 +29,6 @@ int _sqrt_helper(int n, int guess)
  * 
  * Return: square root of n
  */
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
