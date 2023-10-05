@@ -1,7 +1,4 @@
-#include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * array_range - makes an array with numbers
  * @min: start number
