@@ -1,0 +1,1 @@
+Task 1: This code iterates through the linked list and prints each node's length and string value, or [0] (nil) if the string is NULL. It also counts the number of nodes in the list and returns that count.
