@@ -8,7 +8,7 @@ Write a function that prints all the elements of a list_t list.
     If str is NULL, print [0] (nil)
     You are allowed to use printf
 
-This code iterates through the linked list and prints each node's length and string value, or [0] (nil) if the string is NULL. It also counts the number of nodes in the list and returns that count.
+[This](https://github.com/Elijah-6/alx-low_level_programming/blob/6b38e8cf47b9a910d8658ee0a436ee22c66714a8/0x12-singly_linked_lists/0-print_list.c) code iterates through the linked list and prints each node's length and string value, or [0] (nil) if the string is NULL. It also counts the number of nodes in the list and returns that count.
 
 ## Task 1
 ### List length
