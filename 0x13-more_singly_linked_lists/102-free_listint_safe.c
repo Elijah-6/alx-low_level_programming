@@ -9,6 +9,7 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
+	size_t i = 0;
 	size_t size = 0;
 	listint_t *current;
 	listint_t *temp;
@@ -25,7 +26,7 @@ size_t free_listint_safe(listint_t **h)
 		free(current);
 		current = temp;
 
-		for (size_t i = 0; i < size; i++)
+		for (i = 0; i < size; i++)
 		{
 			if (current == runner)
 			{
