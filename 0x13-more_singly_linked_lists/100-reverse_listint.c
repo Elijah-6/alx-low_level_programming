@@ -1,25 +1,47 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * reverse_listint - Reverses a listint_t linked list.
- * @head: Pointer to a pointer to the listint_t linked list
+ * reverse_recur - recursively reverses a listint list
  *
- * Return: A pointer to the first node of the reversed list
+ * @first: node to reverse
+ * @second: node after node to reverse
+ *
+ * Return: void
+ */
+listint_t *reverse_recur(listint_t *first, listint_t *second)
+{
+	listint_t *ptr, *prev = NULL;
+
+	ptr = first;
+	while (ptr->next != second)
+	{
+		prev = ptr;
+		ptr = ptr->next;
+	}
+
+	if (prev != NULL)
+		prev->next = first;
+	second = first->next;
+	first->next = ptr->next;
+	if (first != ptr && second != first)
+		second = reverse_recur(second, first);
+	ptr->next = second;
+	return (ptr);
+}
+
+/**
+ * reverse_listint - reverses a listint list
+ *
+ * @head: list to reverse
+ *
+ * Return: new head of list
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *prev = NULL;
-	listint_t *next_node;
+	if (head == NULL || *head == NULL)
+		return (NULL);
 
-	while (*head != NULL)
-	{
-		next_node = (*head)->next;
-		(*head)->next = prev;
-		prev = *head;
-		*head = next_node;
-	}
-
-	*head = prev;
+	*head = reverse_recur(*head, NULL);
 	return (*head);
 }
-
