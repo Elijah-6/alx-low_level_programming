@@ -1,15 +1,14 @@
 /**
- * set_bit - sets a bit to 1 at a given index
- * @n: pointer to integer
- * @index: index to set to 1
+ * clear_bit - sets bit to 0 at given index
+ * @n: pointer to unsigned long int
+ * @index: index to set to 0
  *
- * Return: 1 if succeeded of -1 if failed
+ * Return: 1 if succeed -1 if failed
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int size;
-	unsigned long int mask;
+	unsigned long int size, mask;
 
 	size = sizeof(*n) * 8 - 1;
 
@@ -18,7 +17,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	mask = 1 << index;
 
-	*n = mask | *n;
+	*n = *n & ~mask;
 
 	return (1);
 }
