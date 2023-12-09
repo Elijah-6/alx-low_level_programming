@@ -11,8 +11,8 @@ This repository contains a set of C code snippets for various tasks. Each code s
 5. [4-free_dlistint.c](4-free_dlistint.c): A C program that frees the memory allocated for a doubly linked list (`dlistint_t`).
 6. [5-get_dnodeint.c](5-get_dnodeint.c): A C program that returns the nth node of a doubly linked list (`dlistint_t`).
 7. [6-sum_dlistint.c](6-sum_dlistint.c): A C program that returns the sum of all the data values in a doubly linked list (`dlistint_t`).
-8. [7-insert_dnodeint_at_index.c](insert_dnodeint_at_index.c): A C program that inserts a new node at a given position in a doubly linked list (`dlistint_t`).
-9. [8-delete_dnodeint.c](8-delete_dnodeint): A C program that deletes the node at a specified index in a doubly linked list (`dlistint_t`).
+8. [7-insert_dnodeint.c](7-insert_dnodeint.c): A C program that inserts a new node at a given position in a doubly linked list (`dlistint_t`).
+9. [8-delete_dnodeint.c](8-delete_dnodeint.c): A C program that deletes the node at a specified index in a doubly linked list (`dlistint_t`).
 
 ## How to Use
 
